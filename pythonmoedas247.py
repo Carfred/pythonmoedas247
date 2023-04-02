@@ -21,6 +21,3 @@ message = client.messages.create(
             to='[+5521971570367]',
             from_='[+15855318471]',
             body=mensagem)
-
-print('Mensagem enviada! ID:', message.sid)
-
