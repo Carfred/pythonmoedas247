@@ -1,1 +1,1 @@
-web: python pythonmoedas247.py
+worker: python pythonmoedas247.py
