@@ -17,10 +17,11 @@ account_sid = 'AC1adda40fd1457e6c23b44636602ae458'
 auth_token = 'aa35219bada6cc432cb8f9477d7c2338'
 client = Client(account_sid, auth_token)
 
-message = client.messages.create(
-            to='[+5521971570367]',
-            from_='[+15855318471]',
-            body=mensagem)
+numeros_telefone = ['+5521971570367', '+5521996611004']  
 
-print('Mensagem enviada! ID:', message.sid)
+for numero in numeros_telefone:
+    message = client.messages.create(
+                to=numero,
+                from_='+15855318471',
+                body=mensagem)
 
